@@ -1,0 +1,95 @@
+/* Custom styles */
+
+body {
+    background-color: #140010;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.jumbotron {
+    border-radius: 0.5rem;
+    animation: fadeIn 1s ease-in-out;
+    background: linear-gradient(135deg, #461d1d 0%, #ad5c5c 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input-group-append button {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.input-group-append button:hover {
+    background-color: #797585;
+    transform: scale(1.05);
+}
+
+.filter-btn {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #462634;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-outline-danger:hover {
+    background-color: #482125;
+    color: white;
+    transform: scale(1.05);
+}
+
+.list-group-item {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+#summary {
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Additional CSS for animations */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Additional CSS for modal */
+.modal-content {
+    border-radius: 0.5rem;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
